@@ -16,7 +16,7 @@ function MyBlogs() {
       const token = localStorage.getItem("token");
 
       const res = await axios.get(
-        "http://localhost:5000/api/blogs/my-blogs",
+        "https://blog-platform-api-xar7.onrender.com/api/blogs/my-blogs",
         {
           headers: {
             Authorization: `Bearer ${token}`,

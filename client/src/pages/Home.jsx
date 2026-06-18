@@ -33,7 +33,7 @@ function Home() {
   const fetchBlogs = async () => {
     try {
       const res = await axios.get(
-        `http://localhost:5000/api/blogs?search=${search}&page=${page}`
+        `https://blog-platform-api-xar7.onrender.com/api/blogs?search=${search}&page=${page}`
       );
 
       setBlogs(res.data.blogs);
@@ -48,7 +48,7 @@ function Home() {
       const token = localStorage.getItem("token");
 
       await axios.put(
-        `http://localhost:5000/api/blogs/update/${id}`,
+        `http://https://blog-platform-api-xar7.onrender.com/api/blogs/update/${id}`,
         { title, content },
         {
           headers: {
@@ -74,7 +74,7 @@ function Home() {
       const token = localStorage.getItem("token");
 
       await axios.delete(
-        `http://localhost:5000/api/blogs/delete/${id}`,
+        `https://blog-platform-api-xar7.onrender.com/api/blogs/delete/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -93,7 +93,7 @@ function Home() {
       const token = localStorage.getItem("token");
 
       await axios.put(
-        `http://localhost:5000/api/blogs/like/${id}`,
+        `http://https://blog-platform-api-xar7.onrender.com/api/blogs/like/${id}`,
         {},
         {
           headers: {
@@ -115,7 +115,7 @@ function Home() {
       const token = localStorage.getItem("token");
 
       await axios.post(
-        `http://localhost:5000/api/blogs/comment/${id}`,
+        `http://https://blog-platform-api-xar7.onrender.com/api/blogs/comment/${id}`,
         {
           text: commentText[id],
         },

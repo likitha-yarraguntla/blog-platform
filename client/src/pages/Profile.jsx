@@ -16,7 +16,7 @@ function Profile() {
       const token = localStorage.getItem("token");
 
       const res = await axios.get(
-        "http://localhost:5000/api/auth/profile",
+        "https://blog-platform-api-xar7.onrender.com/api/auth/profile",
         {
           headers: {
             Authorization: `Bearer ${token}`,

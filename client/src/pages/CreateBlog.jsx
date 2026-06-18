@@ -20,7 +20,7 @@ function CreateBlog() {
       const token = localStorage.getItem("token");
 
       await axios.post(
-        "http://localhost:5000/api/blogs/create",
+        "https://blog-platform-api-xar7.onrender.com/api/blogs/create",
         {
           title,
           content,
