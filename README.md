@@ -34,7 +34,7 @@ A full-stack blog application built using the MERN stack that enables users to c
 
 ## Live Demo
 
-* Frontend:blog-platform-1xhs.vercel.app
+* Frontend:https://blog-platform-1xhs.vercel.app/
 * Backend API: https://blog-platform-api-xar7.onrender.com
 
 ## Installation
