@@ -96,20 +96,19 @@ blog-platform/
 ## 📸 Project Screenshots
 
 ### Login Page
-![Login Page](./screenshots/login.png)
+<img src="./client/screenshots/login.png" width="800"/>
 
 ### Home Page
-![Home Page](./screenshots/home.png)
+<img src="./client/screenshots/home.png" width="800"/>
 
 ### Create Blog Page
-![Create Blog Page](./screenshots/create.png)
+<img src="./client/screenshots/create.png" width="800"/>
 
 ### My Blogs Page
-![My Blogs Page](./screenshots/myblogs.png)
+<img src="./client/screenshots/myblogs.png" width="800"/>
 
 ### Profile Page
-![Profile Page](./screenshots/profile.png)
----
+<img src="./client/screenshots/profile.png" width="800"/>
 
 ## ⚙️ Installation & Setup
 
