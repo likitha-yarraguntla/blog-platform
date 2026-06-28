@@ -11,27 +11,23 @@ function Login() {
   const handleLogin = async (e) => {
     e.preventDefault();
 
-    try {
-     await axios.post(
-  "https://blog-platform-api-xar7.onrender.com/api/auth/login",
-        {
-          email,
-          password,
-        }
-      );
-
-      localStorage.setItem("token", res.data.token);
-
-      alert("Login Successful");
-
-      navigate("/home");
-    } catch (error) {
-      console.log(error.response?.data);
-
-      alert(
-        error.response?.data?.message || "Login Failed"
-      );
+  try {
+  const res = await axios.post(
+    "https://blog-platform-api-xar7.onrender.com/api/auth/login",
+    {
+      email,
+      password,
     }
+  );
+
+  localStorage.setItem("token", res.data.token);
+
+  alert("Login Successful");
+  navigate("/home");
+} catch (error) {
+  console.log(error.response?.data);
+  alert(error.response?.data?.message || "Login Failed");
+}
   };
 
   return (
