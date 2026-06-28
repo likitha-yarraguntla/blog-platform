@@ -12,8 +12,8 @@ function Login() {
     e.preventDefault();
 
     try {
-      const res = await axios.post(
-        "https://blog-platform-api-xar7.onrender.com/api/auth/login",
+     await axios.post(
+  "https://blog-platform-api-xar7.onrender.com/api/auth/login",
         {
           email,
           password,
