@@ -92,7 +92,6 @@ blog-platform/
 ```
 
 ---
-
 ## 📸 Project Screenshots
 
 ### Login Page
